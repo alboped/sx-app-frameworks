@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="cn.vbill.xls.MainActivity">
+
+    <LinearLayout android:id="@+id/titleArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F5F5F5"
+        android:orientation="vertical" >
+
+        <include layout="@layout/title_bar" />
+
+        <FrameLayout
+        android:id="@+id/layout_viewager_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/scan_photo_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white" >
+
+            <cn.vbill.xls.view.BaseViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </cn.vbill.xls.view.BaseViewPager>
+
+            <LinearLayout
+                android:id="@+id/layout_viewpager_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="@dimen/view_small_padding"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/view_padding"
+                android:paddingRight="@dimen/view_padding" >
+            </LinearLayout>
+        </RelativeLayout>
+
+        </FrameLayout>
+
+        <ScrollView
+            android:id="@+id/extra_area"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:layout_below="@+id/layout_viewager_content"
+            android:scrollbars="none" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+            <cn.vbill.xls.view.ActiveGrideView
+                android:id="@+id/gridview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:horizontalSpacing="0.5dp"
+                android:listSelector="@null"
+                android:numColumns="4"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="0.5dp" />
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

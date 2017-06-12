@@ -1,0 +1,15 @@
+{
+  "name": "xls",
+  "version": "1.0.0",
+  "description": "react native mix app",
+  "main": "index.android.js",
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.0.0-alpha.6",
+    "react-native": "^0.44.2"
+  }
+}

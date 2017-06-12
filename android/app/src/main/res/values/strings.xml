@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">xls</string>
+    <string name="close">关闭</string>
+    <string name="exit_message">再按一次返回桌面</string>
+
+
+    <string name="title_home">首页</string>
+    <string name="title_merc">公告</string>
+    <string name="title_leader">数据</string>
+    <string name="title_myinfo">我的</string>
+    <string name="webview_test">webview测试</string>
+
+</resources>
