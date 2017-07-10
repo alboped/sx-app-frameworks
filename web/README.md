@@ -37,7 +37,7 @@ yarn run build
 ```
 
 ## 页面写法
-> 项目构建依赖 [sx-ui](https://github.com/sxfed/sx-ui)
+> 项目依赖 [sx-ui](https://github.com/sxfed/sx-ui)
 
 ### 路由
 > 页面导出 PAGE_ROUTE 常量即可，常量的值对应菜单的path
